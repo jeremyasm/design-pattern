@@ -15,7 +15,7 @@ public class Tom implements Observer {
 	}
 	
 	@Override
-	public void update(Observable o, Object arg) {
+	public void update(Observable o, Object arg) { // invoked when get notified by Observable
 		if(o instanceof WeatherData) {
 			WeatherData wd = (WeatherData) o;
 			this.weather = wd.getWeather();
